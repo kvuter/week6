@@ -1,0 +1,52 @@
+<!doctype>
+<html>
+<head>
+
+    <!--This is a link to Vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!--This is a link to style.css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Title name.-->
+   <title>I WANT FLOWERS</title>
+
+   <!-- Extra CSS for the background.-->
+    <style>
+        .scene{
+            background-image:url(img/yiran-ding-572096-unsplashstore%20location.jpg);
+        }
+    </style>
+    
+</head>
+
+<body>
+    <section class="scene">
+       
+        <!-- Menu on the top right. I linked each of the pages. -->
+        <ul>
+          <li><a href="contactus.html">Contact</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+        
+        <header>
+            <h1>FIND US!</h1>
+
+            <!--Vue List Rendering-->
+            <ol id="list">
+                <ol v-for="item in items">
+                  {{ item.message }}
+                </ol>
+              </ol>
+              <script src="index.js"></script>  
+        </header>
+     
+    </section>
+
+
+    
+</body>    
+</html>

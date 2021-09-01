@@ -1,0 +1,98 @@
+<!doctype>
+<html>
+<head>
+
+   <!--This is a link to Vue-->
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+   <!--This is a link to style.css-->
+   <link rel="stylesheet" href="style.css">
+
+   <!--Title name.-->
+   <title>I WANT FLOWERS</title>
+
+</head>
+
+<body>
+        <!-- Menu on the top right. I linked each of the pages. -->
+         <ul>
+          <li><a href="contactus.html">Contact</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+
+        <!-- Select box for customers using Vue-->
+        <h3>Click which flower you want!</h3>
+
+        <select v-model="choosetheflower">
+
+            <option disabled value="">Choose the Flower you want!</option>
+            <option>Tiger Lily</option>
+            <option>Baby's Breath</option>
+            <option>Peony</option>
+            <option>Tulip</option>
+            <option>Mixed flowers of your choice</option>
+            <option>Cherry Blossom</option>
+            <option>Hydrangeas</option>
+            <option>Chamomile</option>
+            <option>Lavender</option>
+
+          </select>
+
+        </div>
+        <script src="index.js"></script>  
+
+    <!-- Each columns have a picture of flowers and descriptions. -->    
+    <div id="columns">
+       
+    <figure>
+        <img src="img/alexandra-gorn-328026-unsplash(tiger%20lily).jpg">
+        <figcaption>$30 Tiger Lily <br><br> Do you want some colourful flowers? Choose fabulous Tiger Lily!</figcaption>
+    </figure>
+
+    <figure>
+        <img src="img/annie-spratt-126386-unsplash(baby_s breath).jpg">
+        <figcaption>$30 Baby's Breath <br><br>Baby's breath displays natural and tinted varieties like a cloud in the sky! </figcaption>
+    </figure>
+
+    <figure>
+        <img src="img/annie-spratt-277559-unsplash(peonies).jpg" height="400px">
+        <figcaption>$25 Peony<br><br>This would be suitable for a wedding or decoration or to make your home welcoming!</figcaption>
+    </figure>
+
+    <figure>
+        <img src="img/debby-hudson-568502-unsplash(tulip).jpg">
+        <figcaption>$30 Tulip<br><br>Enjoy your day with colourful, charming and beautiful tulips.</figcaption>
+    </figure>
+
+    <figure>
+         <img src="img/leonardo-wong-57699-unsplash(roses).jpg">
+        <figcaption>$35 Mixed flowers of your choice<br><br>Romance? Chooose our mixed flowers range to decorate your place and give it a romantic atmosphere! </figcaption>
+    </figure>
+
+    <figure>
+         <img src="img/maarten-deckers-227224-unsplash(cherry%20blossom).jpg">
+        <figcaption>$20 Cherry Blossom<br><br>This flower is excellent with brightening up your place!</figcaption>
+    </figure>
+
+    <figure>
+        <img src="img/maarten-deckers-295105-unsplash(Hydrangeas).jpg">
+        <figcaption>$20 Hydrangeas<br><br>Nice Hydrangeas will make you have peace in your heart!</figcaption>
+    </figure>	
+
+    <figure>
+        <img src="img/rodion-kutsaev-38515-unsplash(chamomile).jpg">
+        <figcaption>$30 Chamomile<br><br>Beautiful Chamomiles that are good for your health, so add some sunshine in your life! </figcaption>
+    </figure>
+    
+    <figure>
+        <img src="img/olia-gozha-377155-unsplash(lavender).jpg">
+        <figcaption>$30 Lavender<br><br>How beautiful are these lavenders?! Enjoy with your eyes and smell such beautiful fragrances!</figcaption>
+    </figure>
+
+    </div>   
+  
+</body>   
+</html>

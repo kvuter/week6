@@ -1,0 +1,91 @@
+<!doctype>
+<html>
+<head>
+    
+  <!--This is a link to Vue-->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+   <!--This is a link to style.css-->
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="searchBar.css">
+
+    <!--This is a link to javascript.-->
+   <script src="search.js"></script>
+
+   <!--Title name.-->
+   <title>I WANT FLOWERS</title>
+
+</head>
+
+<body>
+
+    <section class="scene">
+
+        <!-- Menu on the top right. I linked each of the pages. -->
+        <ul>
+            <li><a href="contactus.html">Contact</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+        
+        <!-- This flower shop's simple slogan  -->
+        <header>
+
+            <!-- Header 1  -->
+            <h1>I WANT FLOWERS</h1>
+            
+            <!--Main message using simple declarative Rendering by Vue -->
+            <div id="main">
+                {{ message }}
+                </div>    
+            <script src="index.js"></script>        
+
+        </header>
+        
+    </section>
+
+    <!-- Search Bar -->
+    <div class="searchbox">
+        <div class="header">
+          <h1>Search</h1>
+          <input onkeyup="filter()" type="text" id="value" placeholder="Search Availability Here">
+        </div>
+  
+        <div class="container">
+  
+          <div class="item">
+            <span class="name">Tiger Lily</span>
+          </div>
+  
+          <div class="item">
+            <span class="name">Tulip</span>
+          </div>
+  
+          <div class="item">
+            <span class="name">Hydrangeas</span>
+          </div>
+  
+          <div class="item">
+            <span class="name">Baby's Breath</span>
+          </div>
+  
+          <div class="item">
+            <span class="name">Chamomile</span>
+          </div>
+  
+          <div class="item">
+            <span class="name">Peony</span>
+          </div>
+  
+          <div class="item">
+            <span class="name">Cherryblossom</span>
+          </div>
+  
+          <div class="item">
+            <span class="name">Lavender</span>
+          </div>
+        </div>
+      </div>
+    
+</body>    
+</html>
